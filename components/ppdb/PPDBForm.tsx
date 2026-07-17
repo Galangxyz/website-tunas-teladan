@@ -19,11 +19,22 @@ const ADMIN_WHATSAPP = '6288274119688';
 
 const INITIAL_FORM: PPDBFormData = {
   namaAnak: '',
+  jenisKelamin: 'Laki-laki',
   jenjang: 'SD',
+  tempatLahir: '',
   tglLahir: '',
+
+  namaAyah: '',
+  namaIbu: '',
   namaWali: '',
   whatsapp: '',
+  email: '',
+
+  alamat: '',
+  asalSekolah: '',
   catatan: '',
+
+  status: 'pending',
 };
 
 export default function PPDBForm() {

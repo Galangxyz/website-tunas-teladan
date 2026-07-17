@@ -70,6 +70,11 @@ export interface FAQ {
   a: string;
 }
 
+export interface FAQItem {
+  q: string;
+  a: string;
+}
+
 export interface Advantage {
   icon: ReactNode;
   title: string;
@@ -90,4 +95,13 @@ export interface PPDBFormData {
   namaWali: string;
   whatsapp: string;
   catatan: string;
+}
+
+export interface ComplaintFormData {
+  name: string;
+  email: string;
+  phone: string;
+  category: string;
+  subject: string;
+  message: string;
 }

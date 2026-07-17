@@ -57,8 +57,12 @@ export default function PrivacyContent() {
 
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
 
-        <motion.div
-          {...fadeUp}
+       <motion.div
+  variants={fadeUp}
+  initial="initial"
+  whileInView="whileInView"
+  viewport={{ once: true, amount: 0.2 }}
+  transition={{ duration: 0.8 }}
           className="max-w-3xl mx-auto text-center"
         >
 
@@ -87,16 +91,12 @@ export default function PrivacyContent() {
 
             return (
 
-              <motion.div
-                key={index}
-                {...fadeUp}
-                transition={{
-                  duration: 0.6,
-                  delay: index * 0.08,
-                }}
-                whileHover={{
-                  y: -8,
-                }}
+            <motion.div
+  variants={fadeUp}
+  initial="initial"
+  whileInView="whileInView"
+  viewport={{ once: true, amount: 0.2 }}
+  transition={{ duration: 0.8 }}
                 className="bg-white rounded-3xl p-8 border border-slate-100 shadow-sm hover:shadow-xl transition"
               >
 
@@ -122,8 +122,12 @@ export default function PrivacyContent() {
 
         </div>
 
-        <motion.div
-          {...fadeUp}
+      <motion.div
+  variants={fadeUp}
+  initial="initial"
+  whileInView="whileInView"
+  viewport={{ once: true, amount: 0.2 }}
+  transition={{ duration: 0.8 }}
           className="mt-20 bg-white rounded-[32px] border border-slate-100 p-10 shadow-sm"
         >
 

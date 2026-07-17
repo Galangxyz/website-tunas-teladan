@@ -1,4 +1,6 @@
-export const fadeUp = {
+import type { Variants } from 'framer-motion';
+
+export const fadeUp: Variants = {
   initial: {
     opacity: 0,
     y: 60,
@@ -7,17 +9,9 @@ export const fadeUp = {
     opacity: 1,
     y: 0,
   },
-  viewport: {
-    once: true,
-    amount: 0.2,
-  },
-  transition: {
-    duration: 0.8,
-    ease: 'easeOut',
-  },
 };
 
-export const fadeLeft = {
+export const fadeLeft: Variants = {
   initial: {
     opacity: 0,
     x: -60,
@@ -26,17 +20,9 @@ export const fadeLeft = {
     opacity: 1,
     x: 0,
   },
-  viewport: {
-    once: true,
-    amount: 0.2,
-  },
-  transition: {
-    duration: 0.8,
-    ease: 'easeOut',
-  },
 };
 
-export const fadeRight = {
+export const fadeRight: Variants = {
   initial: {
     opacity: 0,
     x: 60,
@@ -45,17 +31,9 @@ export const fadeRight = {
     opacity: 1,
     x: 0,
   },
-  viewport: {
-    once: true,
-    amount: 0.2,
-  },
-  transition: {
-    duration: 0.8,
-    ease: 'easeOut',
-  },
 };
 
-export const zoomIn = {
+export const zoomIn: Variants = {
   initial: {
     opacity: 0,
     scale: 0.9,
@@ -63,13 +41,5 @@ export const zoomIn = {
   whileInView: {
     opacity: 1,
     scale: 1,
-  },
-  viewport: {
-    once: true,
-    amount: 0.2,
-  },
-  transition: {
-    duration: 0.8,
-    ease: 'easeOut',
   },
 };
