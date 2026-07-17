@@ -64,7 +64,7 @@ export default function HomePage() {
 
       <Hero onScrollTo={handleScrollTo} onOpenVideo={() => setVideoOpen(true)} />
       <About />
-      <Statistics counts={counts} />
+      <Statistics />
       <Advantages />
       <Programs onScrollTo={handleScrollTo} />
       <VirtualTour
