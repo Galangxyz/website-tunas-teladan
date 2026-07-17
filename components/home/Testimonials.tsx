@@ -4,7 +4,6 @@ import { useEffect, useState } from 'react';
 import { Star, UserCircle2, ChevronLeft, ChevronRight } from 'lucide-react';
 import { motion, AnimatePresence } from 'framer-motion';
 
-import { TESTIMONIALS } from '@/lib/testimonials';
 import { listenReviews, Review } from '@/services/review.service';
 
 export default function Testimonials() {
@@ -23,18 +22,15 @@ export default function Testimonials() {
 
 
 
-  const data =
-  reviews.length > 0
-    ? reviews.map((review) => ({
-        name: review.name,
-        email: review.email,
-        subject: review.subject,
-        role: review.role,
-        comment: review.message,
-        rating: review.rating,
-        avatar: '',
-      }))
-    : TESTIMONIALS;
+  const data = reviews.map((review) => ({
+  name: review.name,
+  email: review.email,
+  subject: review.subject,
+  role: review.role,
+  comment: review.message,
+  rating: review.rating,
+  avatar: '',
+}));
 
 
 
