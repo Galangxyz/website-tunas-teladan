@@ -4,6 +4,7 @@ import { Phone, Mail } from 'lucide-react';
 import { motion, AnimatePresence } from 'framer-motion';
 import Link from 'next/link';
 import { NAV_LINKS } from '@/lib/nav-links';
+import type { NavLink, NavSubLink } from '@/types';
 
 interface MobileMenuProps {
   open: boolean;
@@ -21,7 +22,7 @@ export default function MobileMenu({ open, onScrollTo }: MobileMenuProps) {
           className="fixed inset-0 bg-[#0F4C81] text-white z-[79] pt-24 px-6 flex flex-col justify-between pb-8 overflow-y-auto"
         >
           <div className="flex flex-col gap-6">
-            {NAV_LINKS.map((link, idx) => (
+            {NAV_LINKS.map((link: NavLink, idx: number) => (
               <div key={idx} className="border-b border-white/10 pb-4">
                 {link.submenu ? (
                   <div>
@@ -29,7 +30,7 @@ export default function MobileMenu({ open, onScrollTo }: MobileMenuProps) {
                       {link.name}
                     </h3>
                     <div className="flex flex-col gap-3 pl-3">
-                      {link.submenu.map((sub, sIdx) =>
+                      {link.submenu.map((sub: NavSubLink, sIdx: number) =>
   sub.href ? (
     <Link
       key={sIdx}
