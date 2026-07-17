@@ -1,0 +1,10 @@
+/* Global custom styles for Tunas Teladan */
+/* Floating WA */
+.crisp-client {
+  z-index: 40 !important;
+}
+
+/* Floating Menu */
+.floating-whatsapp {
+  z-index: 50;
+}
