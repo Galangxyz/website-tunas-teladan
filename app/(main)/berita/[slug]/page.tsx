@@ -96,12 +96,11 @@ export default async function NewsDetail({ params }: Props) {
 
   return (
   <>
-  <JsonLd data={schema} />
-  
+    <JsonLd data={schema} />
+
     <main className="bg-[#FAF9F6] min-h-screen">
 
       {/* HERO */}
-
       <section className="relative h-[520px] overflow-hidden">
 
         <img
@@ -109,39 +108,41 @@ export default async function NewsDetail({ params }: Props) {
           alt={article.title}
           className="absolute inset-0 w-full h-full object-cover"
         />
+        
+        <div className="absolute inset-0 bg-gradient-to-t from-black/70 via-black/30 to-black/20" />
 
         <div className="absolute inset-0 max-w-7xl mx-auto px-6 flex flex-col justify-end pb-20">
 
-  <div className="flex flex-col items-start gap-5">
+          <div className="flex flex-col items-start gap-5">
 
-    <Link
-      href="/berita"
-      className="inline-flex items-center gap-2 rounded-full border border-white/20 bg-white/10 backdrop-blur-md px-5 py-2.5 text-sm font-semibold text-yellow hover:bg-white/20 hover:text-[#FFD54F] transition"
-    >
-      <ChevronLeft className="w-4 h-4" />
-      Kembali ke Berita
-    </Link>
+            <Link
+              href="/berita"
+              className="inline-flex items-center gap-2 rounded-full bg-[#0F4C81] px-5 py-2.5 text-sm font-semibold text-white shadow-lg hover:bg-[#0b3a62] transition"
+            >
+              <ChevronLeft className="w-4 h-4" />
+              Kembali ke Berita
+            </Link>
 
-    <span className="inline-flex rounded-full bg-[#3FA9F5] px-4 py-2 text-xs font-bold uppercase tracking-widest text-white">
-      {article.category}
-    </span>
+            <span className="inline-flex rounded-full bg-[#FFD54F] px-4 py-2 text-xs font-bold uppercase tracking-widest text-[#0F4C81] shadow">
+              {article.category}
+            </span>
 
-    <h1 className="max-w-4xl text-4xl md:text-5xl font-extrabold leading-tight text-white">
-      {article.title}
-    </h1>
+            <h1 className="max-w-4xl text-4xl md:text-5xl font-extrabold leading-tight text-[#0F4C81] drop-shadow-md">
+              {article.title}
+            </h1>
 
-    <div className="flex items-center gap-2 text-white/80">
-      <Calendar className="w-4 h-4" />
-      {article.date}
-    </div>
-
-
+            <div className="inline-flex items-center gap-2 rounded-full bg-white/90 px-4 py-2 text-[#0F4C81] shadow-md">
+              <Calendar className="w-4 h-4" />
+              {article.date}
+            </div>
 
           </div>
 
         </div>
 
       </section>
+
+     
 
       {/* ARTICLE */}
 

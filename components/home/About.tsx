@@ -14,8 +14,8 @@ export default function About() {
 
 <ImageLightbox
   src="/og-image.jpg"
-  alt="Guru Sekolah Tunas Teladan"
-  title="Guru Sekolah Tunas Teladan"
+  alt="Sekolah Tunas Teladan"
+  title="Sekolah Tunas Teladan"
   category="Profil Sekolah"
   className="rounded-3xl shadow-xl w-full object-cover"
 />

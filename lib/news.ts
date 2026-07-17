@@ -1,7 +1,36 @@
 import type { NewsItem } from '@/types';
 
 export const NEWS: NewsItem[] = [
+{
+  id: 4,
+  slug: 'ppdb-sd-tunas-teladan-ditutup',
+
+  category: 'PPDB',
+
+  date: '20 Juli 2026',
+
+  title:
+    'PPDB SD Tunas Teladan Tahun Ajaran 2026/2027 Resmi Ditutup',
+
+  excerpt:
+    'Pendaftaran peserta didik baru SD Tunas Teladan Palembang Tahun Ajaran 2026/2027 resmi ditutup setelah mendapat antusiasme yang tinggi dari masyarakat.',
+
+  content: `
+SD Tunas Teladan Palembang mengumumkan bahwa Penerimaan Peserta Didik Baru (PPDB) Tahun Ajaran 2026/2027 telah resmi ditutup.
+
+Sekolah mengucapkan terima kasih atas antusiasme serta kepercayaan Ayah dan Bunda yang telah memilih SD Tunas Teladan sebagai tempat pendidikan putra-putrinya.
+
+Bagi calon peserta didik yang telah mengambil formulir namun belum menyelesaikan proses pendaftaran, pihak sekolah menyampaikan permohonan maaf karena kuota yang tersedia telah terpenuhi.
+
+Semoga kita dapat bertemu kembali pada kesempatan dan tahun ajaran berikutnya.
+
+Terima kasih atas kepercayaan dan dukungannya. Semoga seluruh anak hebat senantiasa meraih masa depan yang gemilang.
+`,
+
+  img: '/news/tutup.jpg',
+},
   {
+  
     id: 1,
     slug: 'qheisya-juara-karate',
 
