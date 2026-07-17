@@ -127,7 +127,7 @@ export default async function NewsDetail({ params }: Props) {
               {article.category}
             </span>
 
-            <h1 className="max-w-4xl text-4xl md:text-5xl font-extrabold leading-tight text-[#0F4C81] drop-shadow-md">
+            <h1 className="max-w-4xl text-4xl md:text-5xl font-extrabold leading-tight text-[#F8FAFC] drop-shadow-md">
               {article.title}
             </h1>
 
