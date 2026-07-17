@@ -31,11 +31,11 @@ export default function NewsPage() {
 
               {NEWS.map((item) => (
 
-                <Link
-                  key={item.id}
-                  href={`/berita/${item.slug}`}
-                  className="bg-white rounded-2xl overflow-hidden shadow-sm hover:shadow-xl transition-all border border-slate-100 flex flex-col group"
-                >
+  <Link
+    key={item.slug}
+    href={`/berita/${item.slug}`}
+    className="bg-white rounded-2xl overflow-hidden shadow-sm hover:shadow-xl transition-all border border-slate-100 flex flex-col group"
+  >
 
                   <div className="relative overflow-hidden h-52">
 
