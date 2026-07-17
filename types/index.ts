@@ -58,6 +58,7 @@ export interface ExtraItem {
 export interface Testimonial {
   name: string;
   role: string;
+  subject: string;
   comment: string;
   rating: number;
   avatar: string;
