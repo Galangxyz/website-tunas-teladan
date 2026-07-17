@@ -4,7 +4,7 @@ import JsonLd from "@/components/seo/JsonLd";
 import { breadcrumbSchema } from "@/lib/seo/breadcrumb";
 
 export const metadata: Metadata = {
-  title: "Aktivitas Peserta Didik"
+  title: "Aktivitas Peserta Didik",
   description: "Beragam kegiatan Sekolah Tunas Teladan Palembang dirancang untuk mendukung perkembangan akademik, karakter, kreativitas, kepemimpinan, serta kepedulian sosial peserta didik.",
 };
 
