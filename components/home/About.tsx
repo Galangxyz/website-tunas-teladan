@@ -13,7 +13,7 @@ export default function About() {
           <div className="absolute -bottom-6 -right-6 w-32 h-32 bg-[#3FA9F5]/10 rounded-full -z-10" />
 
 <ImageLightbox
-  src="/allgurutunasteladan.png"
+  src="/og-image.jpg"
   alt="Guru Sekolah Tunas Teladan"
   title="Guru Sekolah Tunas Teladan"
   category="Profil Sekolah"

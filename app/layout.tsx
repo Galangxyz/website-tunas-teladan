@@ -96,7 +96,7 @@ export const metadata: Metadata = {
 
     images: [
       {
-        url: "/hero.png",
+        url: "/og-image.jpg",
         width: 1200,
         height: 630,
         alt: "Sekolah Tunas Teladan Palembang",
@@ -109,7 +109,7 @@ export const metadata: Metadata = {
     title: "Sekolah Tunas Teladan Palembang",
     description:
       "Website resmi Sekolah Tunas Teladan Palembang yang menyelenggarakan pendidikan TK, SD, dan SMP dengan pembelajaran berkualitas, karakter, prestasi, dan kreativitas.",
-    images: ["/hero.png"],
+    images: ["/og-image.jpg"],
   },
 
   icons: {
