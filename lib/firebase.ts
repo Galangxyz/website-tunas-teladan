@@ -2,12 +2,12 @@ import { initializeApp, getApps, getApp } from "firebase/app";
 import { getFirestore } from "firebase/firestore";
 
 const firebaseConfig = {
-  apiKey: "AIzaSyD-TSzxZ623jHHQLCHOlRfhId2t-pKV9Jo",
-  authDomain: "sekolah-tunas-teladan.firebaseapp.com",
-  projectId: "sekolah-tunas-teladan",
-  storageBucket: "sekolah-tunas-teladan.firebasestorage.app",
-  messagingSenderId: "984808623035",
-  appId: "1:984808623035:web:a24b958090e58f1108929e",
+  apiKey: process.env.NEXT_PUBLIC_FIREBASE_API_KEY!,
+  authDomain: process.env.NEXT_PUBLIC_FIREBASE_AUTH_DOMAIN!,
+  projectId: process.env.NEXT_PUBLIC_FIREBASE_PROJECT_ID!,
+  storageBucket: process.env.NEXT_PUBLIC_FIREBASE_STORAGE_BUCKET!,
+  messagingSenderId: process.env.NEXT_PUBLIC_FIREBASE_MESSAGING_SENDER_ID!,
+  appId: process.env.NEXT_PUBLIC_FIREBASE_APP_ID!,
 };
 
 const app = getApps().length ? getApp() : initializeApp(firebaseConfig);
